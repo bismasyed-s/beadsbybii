@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Custom Orders | Beads by Bii</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-secondary": "#e9ffe7",
+                        "surface-bright": "#faf9f6",
+                        "on-background": "#303330",
+                        "surface-container-high": "#e8e8e4",
+                        "on-surface-variant": "#5d605c",
+                        "tertiary-container": "#fad3fd",
+                        "outline-variant": "#b1b2af",
+                        "on-primary-fixed": "#503246",
+                        "outline": "#797b78",
+                        "surface-variant": "#e1e3df",
+                        "tertiary": "#735578",
+                        "error-dim": "#770326",
+                        "primary-container": "#fdd0ea",
+                        "surface-container-highest": "#e1e3df",
+                        "primary-fixed-dim": "#eec3db",
+                        "on-surface": "#303330",
+                        "inverse-primary": "#fdd0ea",
+                        "on-secondary-fixed": "#0e4f25",
+                        "surface-dim": "#d9dbd6",
+                        "tertiary-fixed-dim": "#ebc5ef",
+                        "surface": "#faf9f6",
+                        "secondary": "#2e6b3d",
+                        "on-tertiary-fixed": "#4f3455",
+                        "tertiary-dim": "#66496b",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-container-low": "#f4f4f0",
+                        "inverse-on-surface": "#9d9d9a",
+                        "error-container": "#f76a80",
+                        "on-secondary-container": "#256235",
+                        "secondary-fixed": "#b9fbc0",
+                        "on-primary": "#fff7f8",
+                        "surface-tint": "#77556a",
+                        "error": "#ac3149",
+                        "on-error": "#fff7f7",
+                        "primary": "#77556a",
+                        "secondary-dim": "#215e32",
+                        "on-error-container": "#68001f",
+                        "on-tertiary-container": "#634668",
+                        "on-primary-fixed-variant": "#6f4e63",
+                        "tertiary-fixed": "#fad3fd",
+                        "on-tertiary-fixed-variant": "#6d4f72",
+                        "surface-container": "#eeeeea",
+                        "on-secondary-fixed-variant": "#306d3f",
+                        "primary-fixed": "#fdd0ea",
+                        "on-primary-container": "#654459",
+                        "inverse-surface": "#0d0f0d",
+                        "secondary-fixed-dim": "#abecb2",
+                        "secondary-container": "#b9fbc0",
+                        "primary-dim": "#6a495e",
+                        "background": "#faf9f6",
+                        "on-tertiary": "#fff7fb"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Noto Serif"],
+                        "body": ["Plus Jakarta Sans"],
+                        "label": ["Plus Jakarta Sans"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .font-serif { font-family: 'Noto Serif', serif; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface selection:bg-primary-container/30">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#faf9f6]/80 dark:bg-stone-900/80 backdrop-blur-xl shadow-[0_10px_30px_rgba(119,85,106,0.06)] flex justify-between items-center px-8 py-4 max-w-full">
+<div class="text-2xl font-serif italic text-pink-900 dark:text-pink-100">Beads by Bii</div>
+<div class="hidden md:flex items-center gap-8 font-['Noto_Serif'] font-medium text-lg">
+<a class="text-stone-500 dark:text-stone-400 hover:scale-105 transition-transform duration-300" href="#">Shop</a>
+<a class="text-pink-900 dark:text-pink-200 border-b-2 border-pink-200 pb-1 hover:scale-105 transition-transform duration-300" href="#">Custom Orders</a>
+<a class="text-stone-500 dark:text-stone-400 hover:scale-105 transition-transform duration-300" href="#">Our Story</a>
+<a class="text-stone-500 dark:text-stone-400 hover:scale-105 transition-transform duration-300" href="#">Care</a>
+</div>
+<div class="flex items-center gap-4 text-pink-700 dark:text-pink-300">
+<button class="hover:scale-105 transition-transform duration-300">
+<span class="material-symbols-outlined" data-icon="shopping_bag">shopping_bag</span>
+</button>
+<button class="hover:scale-105 transition-transform duration-300">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+</button>
+</div>
+</nav>
+<main class="pt-32 pb-20 px-6 max-w-7xl mx-auto overflow-hidden">
+<!-- Hero Section -->
+<section class="text-center mb-24 relative">
+<div class="absolute -top-10 -left-10 w-48 h-48 bg-primary-container/20 rounded-full blur-3xl -z-10"></div>
+<div class="absolute top-0 right-0 w-64 h-64 bg-tertiary-container/20 rounded-full blur-3xl -z-10"></div>
+<h1 class="text-6xl md:text-7xl font-headline font-bold text-on-surface mb-6 tracking-tight">Custom Orders</h1>
+<p class="max-w-2xl mx-auto text-lg text-on-surface-variant leading-relaxed">
+                Let's create something unique just for you. From personal color palettes to special charms, I can bring your vision to life. Each piece is hand-strung with intention and a touch of magic.
+            </p>
+</section>
+<!-- Form & Content Section -->
+<div class="flex flex-col lg:flex-row items-start justify-center gap-12 relative">
+<!-- Left Decorative Image -->
+<div class="hidden lg:block w-1/4 mt-20 sticky top-40">
+<div class="bg-surface-container-low rounded-xl p-4 rotate-[-3deg] shadow-[0_10px_30px_rgba(119,85,106,0.04)]">
+<img alt="Aesthetic beads" class="rounded-lg w-full h-64 object-cover" data-alt="Close-up of pastel-colored glass beads and heart charms scattered on a white linen fabric with soft natural morning light" src="images/plainpinkbracelet5.jpeg"/>
+<p class="mt-4 font-headline italic text-primary text-center">Every bead counts</p>
+</div>
+</div>
+<!-- Form Container -->
+<div class="w-full max-w-2xl bg-surface-container-lowest rounded-xl p-8 md:p-12 shadow-[0_15px_40px_rgba(119,85,106,0.05)] border border-outline-variant/10">
+<form class="space-y-8">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="space-y-2">
+<label class="text-sm font-semibold text-on-surface-variant px-1">Name</label>
+<input class="w-full bg-surface-container-high border-none rounded-md focus:ring-2 focus:ring-primary/20 focus:bg-surface-container-lowest transition-all px-4 py-3" placeholder="Your sweet name" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="text-sm font-semibold text-on-surface-variant px-1">Instagram Handle</label>
+<input class="w-full bg-surface-container-high border-none rounded-md focus:ring-2 focus:ring-primary/20 focus:bg-surface-container-lowest transition-all px-4 py-3" placeholder="@username" type="text"/>
+</div>
+</div>
+<div class="space-y-4">
+<label class="text-sm font-semibold text-on-surface-variant px-1">Jewellery Type</label>
+<div class="flex flex-wrap gap-3">
+<label class="cursor-pointer group">
+<input class="hidden peer" name="type" type="radio"/>
+<span class="px-6 py-2 rounded-full bg-surface-container-high text-on-surface-variant peer-checked:bg-primary peer-checked:text-on-primary transition-all inline-block group-hover:scale-102">Necklace</span>
+</label>
+<label class="cursor-pointer group">
+<input class="hidden peer" name="type" type="radio"/>
+<span class="px-6 py-2 rounded-full bg-surface-container-high text-on-surface-variant peer-checked:bg-primary peer-checked:text-on-primary transition-all inline-block group-hover:scale-102">Bracelet</span>
+</label>
+<label class="cursor-pointer group">
+<input checked="" class="hidden peer" name="type" type="radio"/>
+<span class="px-6 py-2 rounded-full bg-surface-container-high text-on-surface-variant peer-checked:bg-primary peer-checked:text-on-primary transition-all inline-block group-hover:scale-102">Ring</span>
+</label>
+<label class="cursor-pointer group">
+<input class="hidden peer" name="type" type="radio"/>
+<span class="px-6 py-2 rounded-full bg-surface-container-high text-on-surface-variant peer-checked:bg-primary peer-checked:text-on-primary transition-all inline-block group-hover:scale-102">Other</span>
+</label>
+</div>
+</div>
+<div class="space-y-2">
+<label class="text-sm font-semibold text-on-surface-variant px-1 flex items-center gap-2">
+                            Color Preference
+                            <span class="inline-block px-2 py-0.5 bg-tertiary-container text-[10px] uppercase tracking-widest font-bold rounded-full rounded-tr-lg">The Charm Chip</span>
+</label>
+<input class="w-full bg-surface-container-high border-none rounded-md focus:ring-2 focus:ring-primary/20 focus:bg-surface-container-lowest transition-all px-4 py-3" placeholder="Soft pinks, mints, pearl white..." type="text"/>
+</div>
+<div class="space-y-2">
+<label class="text-sm font-semibold text-on-surface-variant px-1">Budget Range</label>
+<select class="w-full bg-surface-container-high border-none rounded-md focus:ring-2 focus:ring-primary/20 focus:bg-surface-container-lowest transition-all px-4 py-3">
+<option>Rs.120 - Rs.500</option>
+<option>Rs.550 - Rs.900</option>
+<option>Rs.1000+</option>
+</select>
+</div>
+<div class="space-y-2">
+<label class="text-sm font-semibold text-on-surface-variant px-1">Message Box &amp; Details</label>
+<textarea class="w-full bg-surface-container-high border-none rounded-md focus:ring-2 focus:ring-primary/20 focus:bg-surface-container-lowest transition-all px-4 py-3 resize-none" placeholder="Tell me about your dream piece! Any specific charms or themes?" rows="4"></textarea>
+</div>
+<button class="w-full bg-primary text-on-primary py-4 rounded-full font-bold text-lg hover:scale-102 transition-all shadow-lg shadow-primary/20" type="submit">
+                        Send Inquiry
+                    </button>
+</form>
+</div>
+<!-- Right Decorative Image -->
+<div class="hidden lg:block w-1/4 mt-40 sticky top-60">
+<div class="bg-surface-container-low rounded-xl p-4 rotate-[4deg] shadow-[0_10px_30px_rgba(119,85,106,0.04)]">
+<img alt="Beaded Necklace" class="rounded-lg w-full h-64 object-cover" data-alt="Dainty handcrafted beaded necklace with tiny pearls and gold cherry charms resting on a soft pink satin cloth" src="images/flowersring3.jpeg"/>
+<p class="mt-4 font-headline italic text-primary text-center">Handcrafted Magic</p>
+</div>
+<div class="mt-8 p-6 bg-secondary-container/30 rounded-xl">
+<h3 class="font-headline text-lg text-on-secondary-container mb-2">Note:</h3>
+<p class="text-sm text-on-secondary-container/80 leading-relaxed">Please allow 3-5 business days for a response as I handcraft each quote based on your vision!</p>
+</div>
+</div>
+</div>
+<!-- Asymmetric Visual Break -->
+<section class="mt-32 grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="md:col-span-2 bg-primary-container/10 p-12 rounded-xl flex flex-col md:flex-row items-center gap-8">
+<div class="flex-1">
+<h2 class="text-3xl font-headline font-bold text-on-primary-container mb-4">The Process</h2>
+<p class="text-on-primary-container/70 leading-relaxed">1. Fill out this inquiry form.<br/>2. We chat about designs &amp; beads.<br/>3. I create a custom listing for you.<br/>4. Your magical piece gets made &amp; shipped!</p>
+</div>
+
+</div>
+<div class="bg-surface-container-high p-8 rounded-xl flex flex-col justify-center text-center">
+<span class="material-symbols-outlined text-primary text-4xl mb-4" data-icon="auto_awesome">auto_awesome</span>
+<h3 class="font-headline text-xl mb-2">100% Unique</h3>
+<p class="text-sm text-on-surface-variant">No two custom pieces are ever exactly the same. Yours is truly yours.</p>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#f4f4f0] dark:bg-stone-800 rounded-t-[3rem] w-full mt-20 flex flex-col items-center gap-6 py-12 px-6 w-full font-['Plus_Jakarta_Sans'] text-sm tracking-wide">
+<div class="font-serif text-xl text-pink-900 dark:text-pink-100">Beads by Bii</div>
+<div class="flex flex-wrap justify-center gap-8 text-stone-600 dark:text-stone-400">
+<a class="opacity-80 hover:opacity-100 transition-opacity hover:text-pink-900 dark:hover:text-pink-100" href="#">Privacy Policy</a>
+<a class="opacity-80 hover:opacity-100 transition-opacity hover:text-pink-900 dark:hover:text-pink-100" href="#">Shipping &amp; Returns</a>
+<a class="opacity-80 hover:opacity-100 transition-opacity hover:text-pink-900 dark:hover:text-pink-100" href="#">Contact Us</a>
+</div>
+<div class="mt-4 flex gap-4">
+<a class="text-pink-700 dark:text-pink-300 opacity-80 hover:opacity-100 transition-opacity" href="#">
+<span class="material-symbols-outlined" data-icon="camera_alt">camera_alt</span>
+</a>
+<a class="text-pink-700 dark:text-pink-300 opacity-80 hover:opacity-100 transition-opacity" href="#">
+<span class="material-symbols-outlined" data-icon="mail">mail</span>
+</a>
+</div>
+<p class="text-stone-500 text-[12px] mt-4 opacity-70">© 2024 Beads by Bii. Handcrafted with love.</p>
+</footer>
+</body></html>

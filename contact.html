@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "primary": "#E9D5FF",
+                    "on-primary": "#4A3742",
+                    "secondary-container": "#F5E1DA",
+                    "on-secondary-container": "#5D4037",
+                    "primary-container": "#E9D5FF",
+                    "on-primary-container": "#4A3742",
+                    "tertiary-container": "#F5E1DA",
+                    "on-tertiary-container": "#5D4037",
+                    "background": "#faf9f6",
+                    "surface": "#faf9f6",
+                    "on-surface": "#303330",
+                    "on-surface-variant": "#5d605c"
+            },
+            "borderRadius": {
+                    "DEFAULT": "1rem",
+                    "lg": "2rem",
+                    "xl": "3rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Noto Serif"],
+                    "body": ["Plus Jakarta Sans"],
+                    "label": ["Plus Jakarta Sans"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #faf9f6;
+        }
+        h1, h2, h3, .serif-font {
+            font-family: 'Noto Serif', serif;
+        }
+        .glass-nav {
+            background: rgba(250, 249, 246, 0.8);
+            backdrop-filter: blur(20px);
+        }
+    </style>
+</head>
+<body class="text-on-surface overflow-x-hidden">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 glass-nav shadow-sm">
+<div class="flex justify-between items-center px-8 py-4 max-w-full">
+<span class="text-2xl font-bold font-['Noto_Serif'] tracking-tight text-primary">Beads by Bii</span>
+<div class="hidden md:flex gap-8 items-center">
+<a class="font-['Noto_Serif'] text-lg font-medium text-[#5d605c] hover:text-[#77556a] transition-all" href="shop.html">Shop</a>
+<a class="font-['Noto_Serif'] text-lg font-medium text-[#5d605c] hover:text-[#77556a] transition-all" href="#">Our Story</a>
+<a class="font-['Noto_Serif'] text-lg font-medium text-[#5d605c] hover:text-[#77556a] transition-all" href="#">Care</a>
+<a class="font-['Noto_Serif'] text-lg font-medium text-[#5d605c] hover:text-[#77556a] transition-all" href="#">Journal</a>
+<a class="font-['Noto_Serif'] text-lg font-medium text-primary border-b-2 border-primary pb-1 transition-all" href="contact.html">Contact</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="transition-transform duration-300 hover:scale-105 text-primary">
+<span class="material-symbols-outlined" data-icon="shopping_bag">shopping_bag</span>
+</button>
+</div>
+</div>
+</nav>
+<main class="pt-32 pb-20 px-6 max-w-7xl mx-auto">
+<!-- Hero Section / Asymmetric Layout -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<!-- Left Text Content -->
+<div class="lg:col-span-6 space-y-8">
+<div class="space-y-4">
+<span class="inline-block py-1 px-4 bg-tertiary-container text-on-tertiary-container rounded-full rounded-tr-lg text-sm font-semibold tracking-wider uppercase">Say Hello</span>
+<h1 class="text-5xl md:text-6xl font-bold text-primary leading-tight">We'd love to hear from you!</h1>
+<p class="text-xl text-on-surface-variant leading-relaxed max-w-lg">
+                        Whether you have a question about our pieces or just want to say hi, feel free to reach out. Every bead tells a story, and we'd love to be part of yours.
+                    </p>
+</div>
+<div class="flex flex-col sm:flex-row gap-4 pt-4">
+<a class="inline-flex items-center justify-center gap-2 px-8 py-4 bg-primary text-on-primary rounded-full text-lg font-semibold transition-transform duration-300 hover:scale-105 shadow-lg shadow-primary/10" href="mailto:">
+<span class="material-symbols-outlined" data-icon="mail">mail</span>
+                        Email us
+                    </a>
+<a class="inline-flex items-center justify-center gap-2 px-8 py-4 bg-secondary-container text-on-secondary-container rounded-full text-lg font-semibold transition-transform duration-300 hover:scale-105" href="#">
+<span class="material-symbols-outlined" data-icon="camera">camera</span>
+                        Follow us on Instagram
+                    </a>
+</div>
+</div>
+<!-- Right Decorative Image Section -->
+<div class="lg:col-span-6 relative">
+<div class="relative w-full aspect-square md:aspect-[4/5] rounded-xl overflow-hidden shadow-2xl">
+<img alt="Handmade beads" class="w-full h-full object-cover" data-alt="A soft aesthetic flat lay photo of pink and lilac sparkly beads in cute small ceramic bowls arranged on a smooth soft stone and pebble background with gentle natural lighting." src="images/mix.jpeg"/>
+</div>
+<!-- Floating Decorative Card -->
+<div class="absolute -bottom-6 -left-6 md:-left-12 p-8 bg-surface-container-lowest rounded-lg shadow-xl max-w-xs hidden sm:block">
+<p class="italic text-primary font-['Noto_Serif'] text-lg">"Each piece is handcrafted with love and intention in our small studio."</p>
+<div class="mt-4 flex gap-2">
+<div class="w-8 h-8 rounded-full bg-primary-container"></div>
+<div class="w-8 h-8 rounded-full bg-tertiary-container"></div>
+<div class="w-8 h-8 rounded-full bg-secondary-container"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Contact Detail Cards - Bento Style -->
+<div class="mt-32 grid grid-cols-1 gap-6 md:grid-cols-2 max-w-4xl mx-auto">
+<!-- Email Card -->
+<div class="p-10 rounded-xl flex flex-col gap-4 group transition-colors duration-500 bg-[#F3E8FF]">
+<div class="w-12 h-12 bg-surface-container-lowest rounded-full flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-pink-700" data-icon="alternate_email">alternate_email</span>
+</div>
+<h3 class="text-2xl font-bold text-pink-700">Email Support</h3>
+<p class="text-on-surface-variant">We respond to all inquiries within 24-48 hours.</p>
+<span class="text-lg font-semibold mt-2 text-pink-700"></span>
+</div>
+<!-- Wholesale Card -->
+<!-- Social Card -->
+<div class="p-10 rounded-xl flex flex-col gap-4 group transition-colors duration-500 bg-[#F3E8FF]">
+<div class="w-12 h-12 bg-surface-container-lowest rounded-full flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-pink-700" data-icon="favorite">favorite</span>
+</div>
+<h3 class="text-2xl font-bold text-pink-700">Community</h3>
+<p class="text-on-surface-variant">Tag us in your photos to be featured in our journal.</p>
+<span class="text-lg font-semibold mt-2 text-pink-700">@beadsby.bii</span>
+</div>
+</div>
+<!-- Secondary Imagery Section -->
+</main>
+<!-- Footer -->
+<footer class="w-full rounded-t-[3rem] mt-20 bg-[#f4f4f0] py-12 px-6 flex flex-col items-center gap-6">
+<span class="font-['Noto_Serif'] italic text-2xl font-bold text-primary">Beads by Bii</span>
+<div class="flex flex-wrap justify-center gap-8">
+<a class="font-['Plus_Jakarta_Sans'] text-sm tracking-wide text-[#5d605c] hover:text-[#77556a] transition-colors" href="#">Privacy Policy</a>
+<a class="font-['Plus_Jakarta_Sans'] text-sm tracking-wide text-[#5d605c] hover:text-[#77556a] transition-colors" href="#">Shipping &amp; Returns</a>
+<a class="font-['Plus_Jakarta_Sans'] text-sm tracking-wide text-[#5d605c] hover:text-[#77556a] transition-colors" href="#">Wholesale</a>
+<a class="font-['Plus_Jakarta_Sans'] text-sm tracking-wide text-[#5d605c] hover:text-[#77556a] transition-colors" href="#">FAQ</a>
+</div>
+<p class="font-['Plus_Jakarta_Sans'] text-sm tracking-wide text-[#5d605c] mt-4">
+            © 2024 Beads by Bii. Handcrafted with love.
+        </p>
+</footer>
+</body></html>

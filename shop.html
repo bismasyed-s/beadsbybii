@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-tertiary-fixed-variant": "#6d4f72",
+                    "surface-container-high": "#e8e8e4",
+                    "inverse-primary": "#fdd0ea",
+                    "primary-dim": "#6a495e",
+                    "surface-dim": "#d9dbd6",
+                    "primary-fixed-dim": "#eec3db",
+                    "on-primary-container": "#654459",
+                    "surface": "#faf9f6",
+                    "on-primary-fixed": "#503246",
+                    "tertiary-container": "#fad3fd",
+                    "on-secondary-fixed-variant": "#306d3f",
+                    "inverse-on-surface": "#9d9d9a",
+                    "surface-bright": "#faf9f6",
+                    "surface-container-highest": "#e1e3df",
+                    "outline-variant": "#b1b2af",
+                    "on-background": "#303330",
+                    "error": "#ac3149",
+                    "on-secondary-container": "#256235",
+                    "surface-container-lowest": "#ffffff",
+                    "secondary-container": "#b9fbc0",
+                    "tertiary-fixed-dim": "#ebc5ef",
+                    "error-dim": "#770326",
+                    "on-error": "#fff7f7",
+                    "on-secondary-fixed": "#0e4f25",
+                    "inverse-surface": "#0d0f0d",
+                    "secondary-fixed-dim": "#abecb2",
+                    "on-tertiary-fixed": "#4f3455",
+                    "on-primary-fixed-variant": "#6f4e63",
+                    "tertiary-dim": "#66496b",
+                    "secondary-dim": "#215e32",
+                    "primary": "#77556a",
+                    "secondary-fixed": "#b9fbc0",
+                    "on-secondary": "#e9ffe7",
+                    "on-surface-variant": "#5d605c",
+                    "error-container": "#f76a80",
+                    "surface-tint": "#77556a",
+                    "on-error-container": "#68001f",
+                    "secondary": "#2e6b3d",
+                    "primary-fixed": "#fdd0ea",
+                    "on-surface": "#303330",
+                    "on-tertiary-container": "#634668",
+                    "on-tertiary": "#fff7fb",
+                    "outline": "#797b78",
+                    "surface-container": "#eeeeea",
+                    "surface-variant": "#e1e3df",
+                    "tertiary-fixed": "#fad3fd",
+                    "surface-container-low": "#f4f4f0",
+                    "background": "#faf9f6",
+                    "tertiary": "#735578",
+                    "primary-container": "#fdd0ea",
+                    "on-primary": "#fff7f8"
+            },
+            "borderRadius": {
+                    "DEFAULT": "1rem",
+                    "lg": "2rem",
+                    "xl": "3rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Noto Serif"],
+                    "body": ["Plus Jakarta Sans"],
+                    "label": ["Plus Jakarta Sans"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-nav {
+            backdrop-filter: blur(20px);
+        }
+        .charm-chip {
+            border-radius: 9999px 9999px 1.5rem 9999px;
+        }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-surface">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#faf9f6]/80 dark:bg-stone-950/80 backdrop-blur-xl shadow-[0_10px_30px_rgba(119,85,106,0.06)]">
+<div class="flex justify-between items-center px-8 py-4 w-full max-w-screen-2xl mx-auto">
+<div class="flex items-center gap-12">
+<a class="text-2xl font-bold font-['Noto_Serif'] text-[#77556a] dark:text-[#fccfe8]" href="#">Beads by Bii</a>
+<div class="hidden md:flex gap-8 items-center">
+<a class="font-['Noto_Serif'] text-lg tracking-tight text-[#77556a] dark:text-[#fccfe8] font-bold border-b-2 border-[#77556a] dark:border-[#fccfe8] pb-1 hover:scale-105 transition-transform duration-300" href="shop.html">Shop All</a>
+<a class="font-['Noto_Serif'] text-lg tracking-tight text-[#5d605c] dark:text-stone-400 font-normal hover:text-[#77556a] hover:scale-105 transition-transform duration-300" href="shop.html">Necklaces</a>
+<a class="font-['Noto_Serif'] text-lg tracking-tight text-[#5d605c] dark:text-stone-400 font-normal hover:text-[#77556a] hover:scale-105 transition-transform duration-300" href="shop.html">Bracelets</a>
+<a class="font-['Noto_Serif'] text-lg tracking-tight text-[#5d605c] dark:text-stone-400 font-normal hover:text-[#77556a] hover:scale-105 transition-transform duration-300" href="custom_orders.html">Custom</a>
+</div>
+</div>
+<div class="flex items-center gap-6 text-[#77556a] dark:text-[#fccfe8]">
+<button class="hover:scale-105 transition-transform duration-300 active:scale-95">
+<span class="material-symbols-outlined">favorite</span>
+</button>
+<button class="hover:scale-105 transition-transform duration-300 active:scale-95">
+<span class="material-symbols-outlined">shopping_bag</span>
+</button>
+</div>
+</div>
+</nav>
+<!-- Hero / Title Section -->
+<header class="pt-32 pb-12 px-8 text-center bg-gradient-to-b from-primary-container/20 to-transparent">
+<h1 class="font-headline text-5xl md:text-6xl text-primary mb-4 italic">Our Collection</h1>
+<p class="font-body text-on-surface-variant max-w-xl mx-auto">Whimsical, handmade pieces designed to bring a touch of ethereal magic to your everyday style.</p>
+</header>
+<!-- Filter Bar -->
+<section class="sticky top-[72px] z-40 bg-surface/60 backdrop-blur-md py-6 px-8 mb-8">
+<div class="max-w-screen-xl mx-auto flex flex-wrap justify-center gap-3">
+<button class="px-6 py-2 rounded-full bg-[#D8B4FE] text-white font-medium hover:scale-102 transition-all">All</button>
+<button class="px-6 py-2 rounded-full bg-[#FBCFE8] text-[#77556a] font-medium hover:scale-102 transition-all">Bracelets</button>
+<button class="px-6 py-2 rounded-full bg-surface-container-low text-on-surface-variant font-medium hover:scale-102 transition-all">Rings</button>
+<button class="px-6 py-2 rounded-full bg-surface-container-low text-on-surface-variant font-medium hover:scale-102 transition-all">Necklaces</button>
+<button class="px-6 py-2 rounded-full bg-surface-container-low text-on-surface-variant font-medium hover:scale-102 transition-all">Custom</button>
+</div>
+</section>
+<!-- Main Content Grid -->
+<main class="max-w-screen-xl mx-auto px-8 pb-24">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+<!-- Product Card 1 -->
+<div class="group cursor-pointer">
+<div class="relative aspect-square mb-6 overflow-hidden rounded-xl bg-surface-container-low">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Close-up of a handmade strawberry-themed beaded necklace with tiny red and green glass beads on a soft pink linen surface" src="images/pearlbracelet3.jpeg"/>
+<div class="absolute top-4 right-4">
+<span class="charm-chip bg-[#FBCFE8] text-[#77556a] px-4 py-1 text-sm font-medium">Bestseller</span>
+</div>
+</div>
+<div class="flex flex-col items-center text-center">
+<h3 class="font-headline text-2xl text-on-surface mb-1">Golden Pearly Bracelet</h3>
+<p class="font-body text-primary font-bold text-lg">Rs.400</p>
+</div>
+</div>
+<!-- Product Card 2 -->
+<div class="group cursor-pointer">
+<div class="relative aspect-square mb-6 overflow-hidden rounded-xl bg-surface-container-low">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Handmade mint green and white pearl bracelet with delicate flower charms arranged artistically on a white marble background" src="images/purple bracelet2.jpeg"/>
+</div>
+<div class="flex flex-col items-center text-center">
+<h3 class="font-headline text-2xl text-on-surface mb-1">Purple Pearly Bracelet</h3>
+<p class="font-body text-primary font-bold text-lg">Rs.350</p>
+</div>
+</div>
+<!-- Product Card 3 -->
+<div class="group cursor-pointer lg:mt-8">
+<div class="relative aspect-square mb-6 overflow-hidden rounded-xl bg-surface-container-low">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Assorted pastel lavender and lilac beaded rings with crystal accents presented in a soft-lit boutique setting" src="images/cherrybraceletset.jpeg"/>
+<div class="absolute top-4 right-4">
+<span class="charm-chip bg-[#FBCFE8] text-[#77556a] px-4 py-1 text-sm font-medium">Limited</span>
+</div>
+</div>
+<div class="flex flex-col items-center text-center">
+<h3 class="font-headline text-2xl text-on-surface mb-1">Cherry Set</h3>
+<p class="font-body text-primary font-bold text-lg">Rs.520</p>
+</div>
+</div>
+<!-- Product Card 4 -->
+<div class="group cursor-pointer">
+<div class="relative aspect-square mb-6 overflow-hidden rounded-xl bg-surface-container-low">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Dainty necklace with iridescent mother of pearl beads and a gold heart charm resting on a textured ivory cloth" src="images/bownecklace.jpeg"/>
+</div>
+<div class="flex flex-col items-center text-center">
+<h3 class="font-headline text-2xl text-on-surface mb-1">Coquette Necklace</h3>
+<p class="font-body text-primary font-bold text-lg">Rs.520</p>
+</div>
+</div>
+<!-- Product Card 5 -->
+<div class="group cursor-pointer">
+<div class="relative aspect-square mb-6 overflow-hidden rounded-xl bg-surface-container-low">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Handcrafted set of five colorful seed bead bracelets in soft rainbow pastels stacked together on a light wooden table" src="images/pinkbracelet1.jpeg"/>
+<div class="absolute top-4 right-4">
+<span class="charm-chip bg-[#FBCFE8] text-[#77556a] px-4 py-1 text-sm font-medium">New</span>
+</div>
+</div>
+<div class="flex flex-col items-center text-center">
+<h3 class="font-headline text-2xl text-on-surface mb-1">Sparkly Bracelet</h3>
+<p class="font-body text-primary font-bold text-lg">Rs.520</p>
+</div>
+</div>
+<!-- Product Card 6 -->
+<div class="group cursor-pointer lg:mt-8">
+<div class="relative aspect-square mb-6 overflow-hidden rounded-xl bg-surface-container-low">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="A customized beaded necklace with white letter beads spelling out a name surrounded by soft teal and mint accents" src="images/rings.jpeg"/>
+</div>
+<div class="flex flex-col items-center text-center">
+<h3 class="font-headline text-2xl text-on-surface mb-1">Ringy Rings</h3>
+<p class="font-body text-primary font-bold text-lg">Rs.120</p>
+</div>
+</div>
+</div>
+<!-- Pagination / Load More -->
+<div class="mt-20 text-center">
+<button class="bg-[#D8B4FE] text-white px-10 py-4 rounded-full font-bold text-lg hover:scale-105 transition-all shadow-[0_10px_30px_rgba(216,180,254,0.3)]">
+                Load More Magic
+            </button>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full rounded-t-[3rem] mt-20 bg-[#f4f4f0] dark:bg-stone-900">
+<div class="flex flex-col md:flex-row justify-between items-center px-12 py-16 w-full">
+<div class="mb-8 md:mb-0 text-center md:text-left">
+<p class="font-['Noto_Serif'] italic text-[#77556a] dark:text-[#fccfe8] text-2xl mb-2">Beads by Bii</p>
+<p class="font-['Plus_Jakarta_Sans'] text-sm tracking-wide text-[#5d605c] dark:text-stone-400 max-w-xs">© 2024 Beads by Bii. Handmade with love.</p>
+</div>
+<div class="flex flex-wrap justify-center gap-8 md:gap-12">
+<a class="font-['Plus_Jakarta_Sans'] text-sm tracking-wide text-[#5d605c] hover:text-[#77556a] underline underline-offset-4 decoration-[#fccfe8] transition-colors duration-200" href="#">Sustainability</a>
+<a class="font-['Plus_Jakarta_Sans'] text-sm tracking-wide text-[#5d605c] hover:text-[#77556a] underline underline-offset-4 decoration-[#fccfe8] transition-colors duration-200" href="#">Care Guide</a>
+<a class="font-['Plus_Jakarta_Sans'] text-sm tracking-wide text-[#5d605c] hover:text-[#77556a] underline underline-offset-4 decoration-[#fccfe8] transition-colors duration-200" href="#">Shipping</a>
+<a class="font-['Plus_Jakarta_Sans'] text-sm tracking-wide text-[#5d605c] hover:text-[#77556a] underline underline-offset-4 decoration-[#fccfe8] transition-colors duration-200" href="contact.html">Contact</a>
+</div>
+<div class="mt-8 md:mt-0 flex gap-4">
+<span class="material-symbols-outlined text-[#77556a]">newspaper</span>
+<span class="material-symbols-outlined text-[#77556a]">mail</span>
+</div>
+</div>
+</footer>
+</body></html>
